@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter correct Url</title>
+</head>
+   <h1>Entered URL is:</h1>
+   <h2>This is the link:</h2>
+   
+<body>
+    <p>
+        <span id="url"></span>
+    </p>
+    <script>
+        var url= prompt("Enter a url")
+        if(url.substr(0,5 )=="http:")
+        {
+            console.log(url)
+        }
+        else{
+            console.warn("Reenter the URL")
+            url = "http://"+url;
+        }
+        var link=document.getElementById("url")
+        link.innerHTML="<a href='"+url+"'>"+url+"</a>";
+        
+    </script>
+    
+</body>
+</html>
