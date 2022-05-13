@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <small>This one is first</small>
+     <h1 class="title"> 
+        Hello World this is the title.
+        <small>Change me, too!</small>
+    </h1>
+    <a href="#">Change Link text</a>  -->
+    <ul>
+        <li>NO 1</li>
+        <li>NO 2</li>
+        <li>NO 3</li>
+        <li>NO 4</li>
+        <li>NO 5</li>
+    </ul>  
+    <input type = "text" style='padding:30px; font-size:30px;'class="form-control" value="Hello Ashu!">
+    <script>
+        var title = document.querySelector(".title")//to grab an element by an tittle use querry selector just like css.class
+        title.innerText="Changed using a class"; 
+        var small = document.querySelector("small")//to get first small
+        small.innerText = "Tiny text" 
+        var small = title.querySelector("small")// to get second small
+        small.innerText = "FAB" ;
+        var a = document.querySelector("a")//change the link of regualr link a
+        a.innerText="Coading for everybody";
+        var lis = document.querySelectorAll("li") //taking all li and changing in console by nodelist eg:lis[0].innerText = "IAM THE QUEEN"
+        var input = document.querySelector(".form-control")//Value of a text field in console which gives the interactivity between the user and developer
+        console.log(input.value)
+    </script>
+   
+    
+</body>
+</html>
