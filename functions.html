@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="customerID"></h1>
     <script>
         /* function greeting(name,age)
         {
@@ -14,16 +15,41 @@
             console.log("Age is "+age);
         }
         greeting("Akanksha",21); */
-        function greeting(name="anu",age =16)
+        /* function greeting(name="anu",age =16)
         {
             console.log("hello "+name);
             console.log("Age is "+age);
 
-             return name;
+            return name;
         }
         var defaultName = greeting()
         var ashu = greeting("Ashu",21);
-        var divya = greeting("Divya",48);
+        var divya = greeting("Divya",48); */
+
+        /* function domath(num)
+        {
+            num=Number(num);
+            if(num)
+            {
+                var newno =(num/100)+9;
+                return newno;
+            }
+            else{
+                return false;
+            }
+        }
+        var enteredno = domath(678);
+        console.log(enteredno); */
+        
+        function $(id)
+        {
+            console.log("Id is:", id);
+            return document.getElementById(id)
+        }
+        var customelem = $("customerID");
+        customelem.innerText="Something here"; 
+        
+
     </script>
 </body>
 </html>
