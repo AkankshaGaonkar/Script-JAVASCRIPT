@@ -17,7 +17,7 @@ function main(){
     move();
  }
 
- //for digonal movement of kernal
+ //for digonal movement of karel
  function main(){
     //your code here
     putBeeper();
