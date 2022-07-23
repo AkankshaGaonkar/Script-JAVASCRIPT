@@ -8,4 +8,11 @@ prompt("Type the 1st person name");
 prompt("Type the 2nd person name");
 var lovescore = Math.random()*100;
 lovescore = Math.floor(lovescore)+1;
-alert("Your love % is "+lovescore);
+if(lovescore>70)
+{
+    alert("Congragulations u bond is strong and the % is  "+lovescore)
+}
+else{
+    alert("Your love % is "+lovescore);
+}
+
